@@ -1,0 +1,17 @@
+# Core dependencies (Currently needed for Preprocessor)
+PyMuPDF>=1.24.0
+
+# Stage 4: Quality Validator — Rendering validation
+markdown-it-py>=3.0.0
+
+# Stage 6: Streamlit UI Service
+streamlit>=1.35.0
+plotly>=5.0.0
+
+# Testing
+pytest>=8.0.0
+pytest-html
+
+# UI E2E Testing
+playwright
+pytest-playwright

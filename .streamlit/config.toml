@@ -1,0 +1,4 @@
+[server]
+# Enforce the 10 MB limit natively in Streamlit
+# This automatically changes the UI text from "200MB" to "10MB"
+maxUploadSize = 20

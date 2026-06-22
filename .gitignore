@@ -1,0 +1,15 @@
+venv
+venv~
+agent-ai-driven/
+outputs/
+
+# QA Execution Artifacts
+reports/
+.pytest_cache/
+__pycache__/
+
+#Screenshots directory for UI tests
+screenshots/
+
+# Scratch & Experimental files
+scratch/

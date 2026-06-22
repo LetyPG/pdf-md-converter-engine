@@ -1,0 +1,1 @@
+"""Markdown Generator core package."""
