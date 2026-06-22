@@ -12,18 +12,18 @@ The generated Markdown is designed to serve as a reusable knowledge artifact for
 All major design decisions, architecture choices, and evolution trade-offs are recorded in the `docs/` directory.
 
 - [System Requirements and User Scenarios](docs/user_scenarios.md)
-- [Problem Origins](docs/problem_origins.md)
+- [Problem Origins](docs/problem_origin.md)
 - [Implementation Architecture](docs/implementation_architecture.md)
 - [Test Architectural Decisions](docs/test_architectural_decisions.md)
 - [UI Description](docs/ui_description.md)
-- [Agent Native Workflow Description](docs/agent_ai_native_description.md)
+- [Agent Native Workflow Description](docs/agent_ai_driven_description.md)
 
 ---
 ## Problem Origins of the Project
 
 PDF-to-MD Converter is a lightweight local knowledge-preparation utility that transforms well-structured PDF reference documents into AI-optimized Markdown artifacts, reducing token consumption, improving retrieval accuracy, and enabling efficient agent-driven workflows without requiring vector databases or external infrastructure.
 
-**Problem origins details refer to [docs/problem_origins.md](docs/problem_origins.md)**
+**Problem origins details refer to [docs/problem_origins.md](docs/problem_origin.md)**
 
 ---
 ## Product Vision
@@ -52,7 +52,7 @@ The tool can operate as:
 
 The project was built using an **AI-native development methodology** — a structured approach where an AI coding agent (Antigravity, powered by Google DeepMind) acts as the primary implementer, guided by a layered set of human-authored documents instead of informal verbal instructions.
 
-**AI Native Development details refer to [docs/agent_ai_native_description.md](docs/agent_ai_native_description.md)**
+**AI Native Development details refer to [docs/agent_ai_driven_description.md](docs/agent_ai_driven_description.md)**
 
 ---
 ## Preconditions for PDF Processing
@@ -209,7 +209,7 @@ python -m scripts.pdfmd_converter pdf_data/CTFL_-_V4.0_-_ES_-_PROGRAMA_DE_ESTUDI
 For CLI and UI the default output directory is `outputs`.
 - A subdirectory is created for each run in the `outputs` directory.
 - The subdirectory name is `run_YYYYMMDD_HHMMSS` where `YYYYMMDD_HHMMSS` is the timestamp of the run.
->If the output directory is setup different by user preference the new directory name will be displayed in the UI and in the terminal output of the CLI.
+>If the output directory is set up differently by user preference, the new directory name will be displayed in the UI and in the terminal output of the CLI.
 
 ```bash
 ls outputs/run_*/
@@ -230,7 +230,7 @@ Each run produces:
 ## Running the Tests
 
 You must be inside the virtual environment to run the tests.
-You can run test at the same time as the application is running for that to happen you need to run the application in one terminal and the tests in another terminal.
+You can run tests while the application is running. To do that, run the application in one terminal and the tests in another.
 
 **Test Architecture and Strategy details refer to [docs/test_architectural_decisions.md](docs/test_architectural_decisions.md)**
 
@@ -290,7 +290,7 @@ All runtime stages are LLM-free. No API keys, no cloud services, no external net
 
 ## Contributing
 
-Contributions are welcome. Please read the architecture constraints and decisions in `docs/` directory and [GOVERNACE_CONTRIBUTING.md](GOVERNACE_CONTRIBUTING.md) before opening a pull request.
+Contributions are welcome. Please read the architecture constraints and decisions in the `docs/` directory and [GOVERNACE_CONTRIBUTING.md](GOVERNACE_CONTRIBUTING.md) before opening a pull request.
 
 Key rules for contributors:
 
