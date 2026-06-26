@@ -48,6 +48,7 @@ The testing strategy follows the testing pyramid, prioritizing fast, isolated te
 ### 3.1. E2E Test Execution Constraints
 *   **Decision:** E2E UI tests run against the live `http://localhost:8501` instance instead of spawning a background headless subprocess in `conftest.py`.
 *   **Reasoning:** Streamlit's WebSocket server and heavy `stdout` logging frequently caused OS pipe buffer exhaustion (`subprocess.PIPE`), leading to test timeouts and frozen headless browsers during large file uploads. Targeting the active environment ensures test stability.
+![E2E test_report](ui_assets/test_report.png)
 
 ### 3.2. OCP-Compliant Negative Testing
 *   **Decision:** Non-Functional Requirements (NFR) and negative tests use the **Strategy Pattern** for synthetic data generation (`tests/utils/file_factory.py`).
