@@ -116,6 +116,9 @@ Create a personal fork of the project.
 
 ## 2. Create a Branch
 
+**Branch Source**
+As a branch source to create a new branch, use the branch `contribution`
+
 Recommended naming conventions:
 
 feature/<description>
