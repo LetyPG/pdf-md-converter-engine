@@ -7,6 +7,8 @@ A local utility that converts PDF documents into high-fidelity Markdown assets â
 
 The generated Markdown is designed to serve as a reusable knowledge artifact for AI workflows: RAG pipelines, agent memory systems, skill repositories, documentation pipelines, and local AI projects.
 
+![UI-Reference-pdf-md-converter-engine](docs/ui_assets/theme_mode_other_setup_options.png)
+
 ---
 # Design Documents
 
